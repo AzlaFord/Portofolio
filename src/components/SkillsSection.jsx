@@ -1,27 +1,46 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
+// Importă iconițele din react-icons
+import {
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaDocker,
+} from "react-icons/fa";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiFigma,
+} from "react-icons/si";
+import { DiVisualstudio,DiJqueryLogo } from "react-icons/di";
+import { FaPython } from "react-icons/fa";
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "HTML/CSS", icon: <FaHtml5 />, category: "frontend" },
+  { name: "JavaScript", icon: <FaJs />, category: "frontend" },
+  { name: "React", icon: <FaReact />, category: "frontend" },
+  { name: "TypeScript", icon: <SiTypescript />, category: "frontend" },
+  { name: "Tailwind CSS", icon: <SiTailwindcss />, category: "frontend" },
+  { name: "jQuery", icon: <DiJqueryLogo />, category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  { name: "Node.js", icon: <FaNodeJs />, category: "backend" },
+  { name: "Express", icon: <SiExpress />, category: "backend" },
+  { name: "MongoDB", icon: <SiMongodb />, category: "backend" },
+  { name: "PostgreSQL", icon: <SiPostgresql />, category: "backend" },
+  { name: "Python", icon: <FaPython />, category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git/GitHub", icon: <FaGitAlt />, category: "tools" },
+  { name: "Docker", icon: <FaDocker />, category: "tools" },
+  { name: "Figma", icon: <SiFigma />, category: "tools" },
+  { name: "VS Code",icon:<DiVisualstudio />, category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -32,11 +51,12 @@ export const SkillsSection = () => {
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory
   );
+
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My <span className="text-primary"> Skills</span>
+          My <span className="text-primary">Skills</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -48,7 +68,7 @@ export const SkillsSection = () => {
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
+                  : "bg-secondary/70 text-foreground hover:bg-secondary"
               )}
             >
               {category}
@@ -60,22 +80,15 @@ export const SkillsSection = () => {
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="bg-card p-6 rounded-lg shadow-xs card-hover transition hover:shadow-md"
             >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg"> {skill.name}</h3>
-              </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
+              <div className="flex items-center gap-3 h-full">
+                <div className="text-primary text-2xl flex items-center justify-center">
+                  {skill.icon}
+                </div>
+                <h3 className="font-semibold text-lg text-foreground">
+                  {skill.name}
+                </h3>
               </div>
             </div>
           ))}

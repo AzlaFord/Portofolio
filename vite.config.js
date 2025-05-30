@@ -5,7 +5,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  base: `/Portofolio`,
+  plugins: [react(), tailwindcss(),ghPages()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
