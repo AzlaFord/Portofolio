@@ -7,14 +7,21 @@ export const ThemeToggle = () => {
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
+
+    if (storedTheme === "dark" || storedTheme === null) {
+      // Dacă e dark sau nu e nimic salvat, punem dark
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
+      if (storedTheme === null) {
+        localStorage.setItem("theme", "dark");
+      }
     } else {
-      localStorage.setItem("theme", "light");
+      // Dacă e altceva (ex: light)
       setIsDarkMode(false);
+      document.documentElement.classList.remove("dark");
     }
   }, []);
+
 
   const toggleTheme = () => {
     if (isDarkMode) {
