@@ -1,5 +1,6 @@
 import { Briefcase, Code, User } from "lucide-react";
 
+
 export const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-4 relative">
@@ -36,7 +37,7 @@ eager to grow and contribute
               </a>
 
               <a
-                href="/Files/Victor_Bivol_CV_Final.pdf"
+                href={`${import.meta.env.BASE_URL}Files/Victor_Bivol_CV_Final.pdf`}
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
