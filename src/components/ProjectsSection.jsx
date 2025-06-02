@@ -5,11 +5,20 @@ const projects = [
     id: 1,
     title: "Dashboard",
     description: "A dynamic and responsive admin dashboard built with React.",
-    image: "/projects/Dashboard.png",
+    image: "public/projects/Dashboard.png",
     tags: ["React", "TailwindCSS"],
     demoUrl: "https://dash-board-tau-nine.vercel.app/invoices",
     githubUrl: "https://github.com/AzlaFord/DashBoard",
   },
+  {
+  id: 2,
+  title: "Product Manager",
+  description: "A Product manager app ",
+  image: "public/projects/image.webp",
+  tags: ["React", "TailwindCSS","express.js"],
+  demoUrl: "https://productmanager-5tva.onrender.com/",
+  githubUrl: "https://github.com/AzlaFord/ProductManager",    
+},
 
 ];
 
