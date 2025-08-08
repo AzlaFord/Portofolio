@@ -19,6 +19,15 @@ const projects = [
     demoUrl: "https://productmanager-5tva.onrender.com/",
     githubUrl: "https://github.com/AzlaFord/ProductManager",
   },
+  {
+    id: 3,
+    title: "Chat App",
+    description: "A real time chat",
+    image: "/projects/chatapp.png", 
+    tags: ["React", "TailwindCSS", "express.js"],
+    demoUrl: "https://chat-app-h9z5.onrender.com/home",
+    githubUrl: "https://github.com/AzlaFord/Chat-App",
+  },
 ];
 
 export const ProjectsSection = () => {
