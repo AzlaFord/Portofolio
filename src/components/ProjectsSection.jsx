@@ -1,11 +1,12 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+const base = import.meta.env.BASE_URL;
 
 const projects = [
   {
     id: 1,
     title: "Dashboard",
     description: "A dynamic and responsive admin dashboard built with React.",
-    image: "/projects/Dashboard.webp", 
+    image: `${base}projects/Dashboard.webp`, 
     tags: ["React", "TailwindCSS"],
     demoUrl: "https://dash-board-tau-nine.vercel.app/invoices",
     githubUrl: "https://github.com/AzlaFord/DashBoard",
@@ -14,7 +15,7 @@ const projects = [
     id: 2,
     title: "Product Manager",
     description: "A Product manager app ",
-    image: "/projects/image.webp", 
+    image: `${base}projects/image.webp`, 
     tags: ["React", "TailwindCSS", "express.js"],
     demoUrl: "https://productmanager-5tva.onrender.com/",
     githubUrl: "https://github.com/AzlaFord/ProductManager",
@@ -23,7 +24,7 @@ const projects = [
     id: 3,
     title: "Chat App",
     description: "A real time chat",
-    image: "/projects/chatapp.webp",
+    image: `${base}projects/chatapp.webp`,
     tags: ["Next.js", "TailwindCSS", "Node.js","Mongodb"],
     demoUrl: "https://chat-app-h9z5.onrender.com/home",
     githubUrl: "https://github.com/AzlaFord/Chat-App",
