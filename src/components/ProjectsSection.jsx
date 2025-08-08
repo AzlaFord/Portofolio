@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Dashboard",
     description: "A dynamic and responsive admin dashboard built with React.",
-    image: "/projects/Dashboard.png", 
+    image: "/projects/Dashboard.webp", 
     tags: ["React", "TailwindCSS"],
     demoUrl: "https://dash-board-tau-nine.vercel.app/invoices",
     githubUrl: "https://github.com/AzlaFord/DashBoard",
@@ -23,11 +23,12 @@ const projects = [
     id: 3,
     title: "Chat App",
     description: "A real time chat",
-    image: "/projects/chatapp.png", 
+    image: "/projects/chatapp.webp",
     tags: ["Next.js", "TailwindCSS", "Node.js","Mongodb"],
     demoUrl: "https://chat-app-h9z5.onrender.com/home",
     githubUrl: "https://github.com/AzlaFord/Chat-App",
-  },
+  }
+
 ];
 
 export const ProjectsSection = () => {
