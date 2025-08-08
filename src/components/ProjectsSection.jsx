@@ -24,7 +24,7 @@ const projects = [
     title: "Chat App",
     description: "A real time chat",
     image: "/projects/chatapp.png", 
-    tags: ["React", "TailwindCSS", "express.js"],
+    tags: ["Next.js", "TailwindCSS", "Node.js","Mongodb"],
     demoUrl: "https://chat-app-h9z5.onrender.com/home",
     githubUrl: "https://github.com/AzlaFord/Chat-App",
   },
