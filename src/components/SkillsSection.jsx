@@ -3,12 +3,10 @@ import { cn } from "@/lib/utils";
 
 // Importă iconițele din react-icons
 import {
-  FaHtml5,
   FaJs,
   FaReact,
   FaNodeJs,
   FaGitAlt,
-  FaDocker,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -18,27 +16,25 @@ import {
   SiPostgresql,
   SiFigma,
 } from "react-icons/si";
+import { RiSupabaseFill,RiNextjsFill } from "react-icons/ri";
 import { DiVisualstudio,DiJqueryLogo } from "react-icons/di";
 import { FaPython } from "react-icons/fa";
 const skills = [
-  // Frontend
-  { name: "HTML/CSS", icon: <FaHtml5 />, category: "frontend" },
   { name: "JavaScript", icon: <FaJs />, category: "frontend" },
   { name: "React", icon: <FaReact />, category: "frontend" },
   { name: "TypeScript", icon: <SiTypescript />, category: "frontend" },
   { name: "Tailwind CSS", icon: <SiTailwindcss />, category: "frontend" },
   { name: "jQuery", icon: <DiJqueryLogo />, category: "frontend" },
 
-  // Backend
   { name: "Node.js", icon: <FaNodeJs />, category: "backend" },
   { name: "Express", icon: <SiExpress />, category: "backend" },
+  { name: "Supabase", icon: <RiSupabaseFill />, category: "backend" },
   { name: "MongoDB", icon: <SiMongodb />, category: "backend" },
   { name: "PostgreSQL", icon: <SiPostgresql />, category: "backend" },
   { name: "Python", icon: <FaPython />, category: "backend" },
+  { name: "Next.js", icon: <RiNextjsFill />, category: "backend" },
 
-  // Tools
   { name: "Git/GitHub", icon: <FaGitAlt />, category: "tools" },
-  { name: "Docker", icon: <FaDocker />, category: "tools" },
   { name: "Figma", icon: <SiFigma />, category: "tools" },
   { name: "VS Code",icon:<DiVisualstudio />, category: "tools" },
 ];
