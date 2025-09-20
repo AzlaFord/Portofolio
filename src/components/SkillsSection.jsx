@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-// Importă iconițele din react-icons
 import {
   FaJs,
   FaReact,

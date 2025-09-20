@@ -51,7 +51,6 @@ export const Navbar = () => {
           ))}
         </div>
 
-
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-50"
