@@ -160,3 +160,13 @@
   padding: 0;
   text-align: center;
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+html {
+  -ms-overflow-style: none;
+}

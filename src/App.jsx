@@ -9,8 +9,8 @@ function App() {
       <Toaster />
       <BrowserRouter basename="/Portofolio">
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="*" element={<NotFound />} />
+          <Route index element={<Home className="overflow-auto scrollbar-hide" />} />
+          <Route path="*" element={<NotFound className="overflow-auto scrollbar-hide" />} />
         </Routes>
       </BrowserRouter>
     </>
