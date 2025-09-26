@@ -14,10 +14,12 @@ import {
   SiMongodb,
   SiPostgresql,
   SiFigma,
-} from "react-icons/si";
+} from "react-icons/si"
+
 import { RiSupabaseFill,RiNextjsFill } from "react-icons/ri";
 import { DiVisualstudio,DiJqueryLogo } from "react-icons/di";
-import { FaPython } from "react-icons/fa";
+import { FaPython } from "react-icons/fa"
+
 const skills = [
   { name: "JavaScript", icon: <FaJs />, category: "frontend" },
   { name: "React", icon: <FaReact />, category: "frontend" },
@@ -36,7 +38,8 @@ const skills = [
   { name: "Git/GitHub", icon: <FaGitAlt />, category: "tools" },
   { name: "Figma", icon: <SiFigma />, category: "tools" },
   { name: "VS Code",icon:<DiVisualstudio />, category: "tools" },
-];
+]
+
 
 const categories = ["all", "frontend", "backend", "tools"];
 

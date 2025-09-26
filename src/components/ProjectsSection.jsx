@@ -13,12 +13,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Product Manager",
-    description: "A Product manager app ",
-    image: `${base}projects/image.webp`, 
-    tags: ["React", "TailwindCSS", "express.js"],
-    demoUrl: "https://productmanager-5tva.onrender.com/",
-    githubUrl: "https://github.com/AzlaFord/ProductManager",
+    title: "EnvSync",
+    description: "A EnvKeys storage app linked to the repo page info ",
+    image: `${base}projects/canvas.png`, 
+    tags: ["Next.js", "TailwindCSS", "supabase"],
+    demoUrl: "https://env-sync.vercel.app/",
+    githubUrl: "https://github.com/AzlaFord/EnvSync",
   },
   {
     id: 3,
