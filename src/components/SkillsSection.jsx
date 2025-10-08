@@ -15,7 +15,7 @@ import {
   SiPostgresql,
   SiFigma,
 } from "react-icons/si"
-
+import { BiLogoGoLang } from "react-icons/bi";
 import { RiSupabaseFill,RiNextjsFill } from "react-icons/ri";
 import { DiVisualstudio,DiJqueryLogo } from "react-icons/di";
 import { FaPython } from "react-icons/fa"
@@ -34,6 +34,7 @@ const skills = [
   { name: "PostgreSQL", icon: <SiPostgresql />, category: "backend" },
   { name: "Python", icon: <FaPython />, category: "backend" },
   { name: "Next.js", icon: <RiNextjsFill />, category: "backend" },
+  { name: "Go",icon:<BiLogoGoLang />, category: "backend" },
 
   { name: "Git/GitHub", icon: <FaGitAlt />, category: "tools" },
   { name: "Figma", icon: <SiFigma />, category: "tools" },
